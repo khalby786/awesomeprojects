@@ -15,5 +15,6 @@ layout: base.html
   {% for project in projects %}
 &bull;&nbsp;<a href="/project/{{ project.title }}">{{ project.title }}</a>:
     {{ project.description }}
-  <br><br>{% endfor %}
+  <br><br>
+{% endfor %}
 </div>
