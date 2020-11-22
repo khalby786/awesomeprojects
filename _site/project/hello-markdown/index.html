@@ -8,14 +8,14 @@
     />
     <link rel="stylesheet" href="/css/bulma.css">
   </head>
-  <body class="container is-fluid" style="padding-top:32px;">
-    <div class="content">
+  <body class="content container is-fluid" style="padding-top:32px;">
+    <div class="is-medium">
 <h1>hello-markdown</h1>
 <p>Server-side markdown renderer, using hello-webpage</p>
 <h3>🤷‍♂️ How does it work?</h3>
-<p>hello-webpage templates use something called lws (local web server) to serve static files (e.g. stylesheets, html files, javascript files, images, basically anything that does not need to be rendered by a server).
-lws also allows you to configure the webserver (like setting up a username/password, setting up logs, etc) using a javascript file. The way you can config lws to fit your needs.
-You can also &quot;trick&quot; lws into running code that is not configuration (like rendering markdown, getting posts from GhostCMS, etc)</p>
+<p>hello-webpage templates use something called lws (local web server) to serve static files (e.g. stylesheets, html files, javascript files, images, basically anything that does not need to be rendered by a server).<br>
+lws also allows you to configure the webserver (like setting up a username/password, setting up logs, etc) using a javascript file. The way you can config lws to fit your needs.<br>
+You can also “trick” lws into running code that is not configuration (like rendering markdown, getting posts from GhostCMS, etc)</p>
 <h3>⚙ How does it render markdown/save it?</h3>
 <p><a href="https://github.com/markdown-it/markdown-it">markdown-it</a> renders the markdown and <a href="https://nodejs.org/api/fs.html">fs (file system)</a> saves it.</p>
 <h3>🎨 What stylesheet does this use?</h3>
