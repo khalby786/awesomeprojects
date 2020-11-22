@@ -2,6 +2,7 @@ dependencies:
   '@11ty/eleventy': 0.11.1
   bulma: 0.9.1
   http-server: 0.12.3
+  markdown-it: 12.0.2
   node-sass: 5.0.0
   sync-request: 6.1.0
 packages:
@@ -259,6 +260,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
+  /argparse/2.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
   /array-differ/1.0.0:
     dev: false
     engines:
@@ -1961,6 +1966,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GnAl/knGn+i1U/wjBz3akz2stz+HrHLsxMwHQGofCDfPvlf+gDKN58UtfmUquTY4/MXeE2x7k19KQmeoZi94Iw==
+  /linkify-it/3.0.2:
+    dependencies:
+      uc.micro: 1.0.6
+    dev: false
+    resolution:
+      integrity: sha512-gDBO4aHNZS6coiZCKVhSNh43F9ioIL4JwRjLZPkoLIY4yZFwg264Y5lu2x6rb1Js42Gh6Yqm2f6L2AJcnkzinQ==
   /liquidjs/6.4.3:
     dev: false
     engines:
@@ -2065,6 +2076,17 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-YWOP1j7UbDNz+TumYP1kpwnP0aEa711cJjrAQrzd0UXlbJfc5aAq0F/PZHjiioqDC1NKgvIMX+o+9Bk7yuM2dg==
+  /markdown-it/12.0.2:
+    dependencies:
+      argparse: 2.0.1
+      entities: 2.0.3
+      linkify-it: 3.0.2
+      mdurl: 1.0.1
+      uc.micro: 1.0.6
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-4Lkvjbv2kK+moL9TbeV+6/NHx+1Q+R/NIdUlFlkqkkzUcTod4uiyTJRiBidKR9qXSdkNFkgv+AELY8KN9vSgVA==
   /maximatch/0.1.0:
     dependencies:
       array-differ: 1.0.0
@@ -3827,5 +3849,6 @@ specifiers:
   '@11ty/eleventy': ^0.11.1
   bulma: ^0.9.0
   http-server: ^0.12.3
+  markdown-it: ^12.0.1
   node-sass: ^5.0.0
   sync-request: ^6.1.0

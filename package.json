@@ -4,14 +4,15 @@
   "description": "A list of awesome projects powered by 11ty and Glitch collections.",
   "scripts": {
     "start": "eleventy && http-server _site -p 3000 -c-1",
-    "build": "node-sass --omit-source-map-url src/bulma.scss css/bulma.css --output-style compressed"
+    "build": "node-sass --omit-source-map-url ssrc/bulma.scss css/bulma.css --output-style compressed"
   },
   "dependencies": {
     "sync-request": "^6.1.0",
     "@11ty/eleventy": "^0.11.1",
     "http-server": "^0.12.3",
     "node-sass": "^5.0.0",
-    "bulma": "^0.9.0"
+    "bulma": "^0.9.0",
+    "markdown-it": "^12.0.1"
   },
   "engines": {
     "node": "12.x"

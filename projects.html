@@ -1,0 +1,9 @@
+---
+pagination:
+  data: projects
+  alias: project
+  size: 1
+permalink: project/{{ project.title }}
+layout: base.html
+---
+{{ project.readme | markdown }}
