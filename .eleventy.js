@@ -10,6 +10,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("markdown", function(value) {
     return md.render(value);
   });
+  eleventyConfig.addFilter("markdownInline", function(value) {
+    return md.renderInline(value);
+  });
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if (
       outputPath.endsWith(".html") ||
