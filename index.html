@@ -2,15 +2,15 @@
 layout: base.html
 ---
 
-<h1 class="title is-1">
+<h1>
   Awesome Projects
 </h1>
-<br />
-<p class="subtitle">
+
+<p>
   This is just a list of awesome projects made with
   <a href="https://glitch.com">Glitch</a> using Glitch's API!
 </p>
-<br>
+
 <div>
   {% for project in projects %}
 &bull;&nbsp;<a href="/project/{{ project.title }}">{{ project.title }}</a>:
