@@ -10,4 +10,24 @@ var res = request(
 );
 res = JSON.parse(res.getBody());
 var obj = [];
-console.log(res);
+var i = 0;
+while (i < res.items.length) {
+  obj.push({
+    title: res.items[i].domain,
+    description: res.items[i].description,
+    url: `https://${res.items[i].domain}.glitch.me`,
+    readme: request(
+      "GET",
+      `https://api.glitch.com/projects/${res.items[i].domain}/readme`,
+      {
+        headers: {
+          "user-agent": "example-user-agent"
+        }
+      }
+    )
+      .getBody()
+      .toString()
+  });
+  i++;
+}
+console.log(obj);
