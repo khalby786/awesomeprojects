@@ -1,66 +1,8 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-  </head>
-  <body class="content container is-fluid">
-    
-<h1>
-  hello-markdown
-</h1>
-  <p>
-    Server-side markdown renderer, using hello-webpage
-  </p>
-<p>
-  <a href="https://hello-markdown.glitch.me">View App</a> &bull; <a href="https://glitch.com/edit/#!/hello-markdown">View Source</a>
-</p>
-<hr />
-<h3>
-  <a href="https://glitch.com/edit/#!/hello-markdown?path=README.md%3A1%3A0">hello-markdown/README.md</a>
-</h3>
-<div>
-  <h1>hello-markdown</h1>
-<p>Server-side markdown renderer, using hello-webpage</p>
-<h3>🤷‍♂️ How does it work?</h3>
-<p>hello-webpage templates use something called lws (local web server) to serve static files (e.g. stylesheets, html files, javascript files, images, basically anything that does not need to be rendered by a server).<br>
-lws also allows you to configure the webserver (like setting up a username/password, setting up logs, etc) using a javascript file. The way you can config lws to fit your needs.<br>
-You can also “trick” lws into running code that is not configuration (like rendering markdown, getting posts from GhostCMS, etc)</p>
-<h3>⚙ How does it render markdown/save it?</h3>
-<p><a href="https://github.com/markdown-it/markdown-it">markdown-it</a> renders the markdown and <a href="https://nodejs.org/api/fs.html">fs (file system)</a> saves it.</p>
-<h3>🎨 What stylesheet does this use?</h3>
-<p><a href="https://github.com/sindresorhus/github-markdown-css">github-markdown-css</a></p>
-<h3>⏱️ Can I use this to keep my app on 24/7?</h3>
-<p>No. As wh0 pointed out, Glitch will initially use lws to serve the files, then move it to S3 (apparently) which is why some static sites go to sleep.</p>
-<h3>💻 How do I get started?</h3>
-<ol>
-<li><a href="https://glitch.com/edit/#!/remix/hello-markdown">Remix this project</a></li>
-<li>Make some pages (markdown is obviously supported, they must end with .md). If you make a page called <code>contact.md</code>, the path would be <code>/contact</code>.</li>
-<li>Run <code>refresh</code>. You have to run <code>refresh</code> to refresh lws because since hello-webpage is a static site, Glitch does monitor/reload lws.</li>
-</ol>
-<h3>👩‍🎨 How do I customize the layout?</h3>
-<p>The layout is stored in <code>layout.html</code>. The main content can be access by using the keyword: <code>{{ content }}</code> (sort of like nunjucks)</p>
-<h3>👀 Examples</h3>
-<ul>
-<li>
-<p><a href="#">This website</a></p>
-</li>
-<li>
-<p><a href="/example">Markdown Cheetsheet</a></p>
-</li>
-</ul>
-<h3>💎 <strong>NEW!</strong> Blogging feature.</h3>
-<p>Place your posts in the <code>posts</code> folder with the following format:</p>
-<pre><code class="language-text">[YYYY]-[MM]-[DD]-[TITLE].md
-</code></pre>
-<p>Your post archive can be found at <code>/posts</code>. <a href="https://hello-markdown.glitch.me/posts">Example of the posts archive.</a></p>
+<!doctype html><html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>AwesomeProjects</title><meta name="title" content="AwesomeProjects"><meta name="description" content="This is just a list of awesome projects made with Glitch that takes data from a collection using Glitch's API!
 
-</div>
+"><meta property="og:type" content="website"><meta property="og:url" content="https://awesomeprojects.glitch.me/"><meta property="og:title" content="AwesomeProjects"><meta property="og:description" content="This is just a list of awesome projects made with Glitch that takes data from a collection using Glitch's API!
 
-    <footer></footer>
-  </body>
-</html>
+"><meta property="og:image" content=""><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://awesomeprojects.glitch.me/"><meta property="twitter:title" content="AwesomeProjects"><meta property="twitter:description" content="This is just a list of awesome projects made with Glitch that takes data from a collection using Glitch's API!
+
+"><meta property="twitter:image" content=""><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"></head><body class="content container is-fluid"><h1>hello-markdown</h1><p>Server-side markdown renderer, using hello-webpage</p><p><a href="https://hello-markdown.glitch.me">View App</a> &bull; <a href="https://glitch.com/edit/#!/hello-markdown">View Source</a></p><hr><h3><a href="https://glitch.com/edit/#!/hello-markdown?path=README.md%3A1%3A0">hello-markdown/README.md</a></h3><div><h1>hello-markdown</h1><p>Server-side markdown renderer, using hello-webpage</p><h3>🤷‍♂️ How does it work?</h3><p>hello-webpage templates use something called lws (local web server) to serve static files (e.g. stylesheets, html files, javascript files, images, basically anything that does not need to be rendered by a server).<br>lws also allows you to configure the webserver (like setting up a username/password, setting up logs, etc) using a javascript file. The way you can config lws to fit your needs.<br>You can also “trick” lws into running code that is not configuration (like rendering markdown, getting posts from GhostCMS, etc)</p><h3>⚙ How does it render markdown/save it?</h3><p><a href="https://github.com/markdown-it/markdown-it">markdown-it</a> renders the markdown and <a href="https://nodejs.org/api/fs.html">fs (file system)</a> saves it.</p><h3>🎨 What stylesheet does this use?</h3><p><a href="https://github.com/sindresorhus/github-markdown-css">github-markdown-css</a></p><h3>⏱️ Can I use this to keep my app on 24/7?</h3><p>No. As wh0 pointed out, Glitch will initially use lws to serve the files, then move it to S3 (apparently) which is why some static sites go to sleep.</p><h3>💻 How do I get started?</h3><ol><li><a href="https://glitch.com/edit/#!/remix/hello-markdown">Remix this project</a></li><li>Make some pages (markdown is obviously supported, they must end with .md). If you make a page called <code>contact.md</code>, the path would be <code>/contact</code>.</li><li>Run <code>refresh</code>. You have to run <code>refresh</code> to refresh lws because since hello-webpage is a static site, Glitch does monitor/reload lws.</li></ol><h3>👩‍🎨 How do I customize the layout?</h3><p>The layout is stored in <code>layout.html</code>. The main content can be access by using the keyword: <code>{{ content }}</code> (sort of like nunjucks)</p><h3>👀 Examples</h3><ul><li><p><a href="#">This website</a></p></li><li><p><a href="/example">Markdown Cheetsheet</a></p></li></ul><h3>💎 <strong>NEW!</strong> Blogging feature.</h3><p>Place your posts in the <code>posts</code> folder with the following format:</p><pre><code class="language-text">[YYYY]-[MM]-[DD]-[TITLE].md
+</code></pre><p>Your post archive can be found at <code>/posts</code>. <a href="https://hello-markdown.glitch.me/posts">Example of the posts archive.</a></p></div><footer></footer></body></html>

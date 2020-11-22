@@ -1,60 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-  </head>
-  <body class="content container is-fluid">
-    
-<h1>
-  honeypot
-</h1>
-  <p>
-    A simple Node app built on Express, instantly up and running.
-  </p>
-<p>
-  <a href="https://honeypot.glitch.me">View App</a> &bull; <a href="https://glitch.com/edit/#!/honeypot">View Source</a>
-</p>
-<hr />
-<h3>
-  <a href="https://glitch.com/edit/#!/honeypot?path=README.md%3A1%3A0">honeypot/README.md</a>
-</h3>
-<div>
-  <h1>🍯 honeypot</h1>
-<hr>
-<h3>What is a honeypot:</h3>
-<blockquote>
-<p>In computer terminology, a honeypot is a computer security mechanism set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems. Generally, a honeypot consists of data (for example, in a network site) that appears to be a legitimate part of the site that seems to contain information or a resource of value to attackers, but actually, is isolated and monitored and enables blocking or analyzing the attackers. This is similar to police sting operations, colloquially known as “baiting” a suspect.</p>
-</blockquote>
-<p>- Wikipedia</p>
-<h3>Why set up a honeypot:</h3>
-<p>Many bad bots will try to attack/DDoS your site. Those same bots will also go to other sites. So, with this honeypot, you can help other people by warning them.</p>
-<h3>How to set it up:</h3>
-<ol>
-<li>Remix the project <a href="https://glitch.com/edit/#!/remix/honeypot">here.</a>,</li>
-<li>Get a <a href="https://www.abuseipdb.com/account/api">AbuseIPDB</a> API key here.</li>
-<li>Place the AbuseIPDB key in the .env file under <code>ABUSEIPDB_API_KEY</code>. It looks like this: <code>ABUSEIPDB_API_KEY=&lt;PLACE API KEY HERE&gt;</code></li>
-</ol>
-<h3>How to add more traps:</h3>
-<p>All traps are stored in <code>routes.js</code>. A normal entry looks something like:</p>
-<pre><code class="language-jsx">&quot;/path/to/trap&quot;: [&quot;15,19&quot;,&quot;A normal description.&quot;]
-</code></pre>
-<p>If you visit PROJECT_NAME.glitch.me/path/to/trap, then you would be reported for “A normal description.” with the tags ‘Hacking’ and ‘Bad web bot’<br>
-This explains more:</p>
-<pre><code class="language-jsx">&quot;/trap&quot;: [&quot;category,category&quot;, &quot;Description&quot;]
-</code></pre>
-<ul>
-<li>“/trap”: The path to the trap (<a href="http://website.com/trap">website.com/trap</a>)</li>
-<li>“category,category”: are the nubers assoicated with categories of attacks. Can be found <a href="https://www.abuseipdb.com/categories">here</a></li>
-<li>“Description”: The description of the attack</li>
-</ul>
+<!doctype html><html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>AwesomeProjects</title><meta name="title" content="AwesomeProjects"><meta name="description" content="This is just a list of awesome projects made with Glitch that takes data from a collection using Glitch's API!
 
-</div>
+"><meta property="og:type" content="website"><meta property="og:url" content="https://awesomeprojects.glitch.me/"><meta property="og:title" content="AwesomeProjects"><meta property="og:description" content="This is just a list of awesome projects made with Glitch that takes data from a collection using Glitch's API!
 
-    <footer></footer>
-  </body>
-</html>
+"><meta property="og:image" content=""><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://awesomeprojects.glitch.me/"><meta property="twitter:title" content="AwesomeProjects"><meta property="twitter:description" content="This is just a list of awesome projects made with Glitch that takes data from a collection using Glitch's API!
+
+"><meta property="twitter:image" content=""><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"></head><body class="content container is-fluid"><h1>honeypot</h1><p>A simple Node app built on Express, instantly up and running.</p><p><a href="https://honeypot.glitch.me">View App</a> &bull; <a href="https://glitch.com/edit/#!/honeypot">View Source</a></p><hr><h3><a href="https://glitch.com/edit/#!/honeypot?path=README.md%3A1%3A0">honeypot/README.md</a></h3><div><h1>🍯 honeypot</h1><hr><h3>What is a honeypot:</h3><blockquote><p>In computer terminology, a honeypot is a computer security mechanism set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems. Generally, a honeypot consists of data (for example, in a network site) that appears to be a legitimate part of the site that seems to contain information or a resource of value to attackers, but actually, is isolated and monitored and enables blocking or analyzing the attackers. This is similar to police sting operations, colloquially known as “baiting” a suspect.</p></blockquote><p>- Wikipedia</p><h3>Why set up a honeypot:</h3><p>Many bad bots will try to attack/DDoS your site. Those same bots will also go to other sites. So, with this honeypot, you can help other people by warning them.</p><h3>How to set it up:</h3><ol><li>Remix the project <a href="https://glitch.com/edit/#!/remix/honeypot">here.</a>,</li><li>Get a <a href="https://www.abuseipdb.com/account/api">AbuseIPDB</a> API key here.</li><li>Place the AbuseIPDB key in the .env file under <code>ABUSEIPDB_API_KEY</code>. It looks like this: <code>ABUSEIPDB_API_KEY=&lt;PLACE API KEY HERE&gt;</code></li></ol><h3>How to add more traps:</h3><p>All traps are stored in <code>routes.js</code>. A normal entry looks something like:</p><pre><code class="language-jsx">&quot;/path/to/trap&quot;: [&quot;15,19&quot;,&quot;A normal description.&quot;]
+</code></pre><p>If you visit PROJECT_NAME.glitch.me/path/to/trap, then you would be reported for “A normal description.” with the tags ‘Hacking’ and ‘Bad web bot’<br>This explains more:</p><pre><code class="language-jsx">&quot;/trap&quot;: [&quot;category,category&quot;, &quot;Description&quot;]
+</code></pre><ul><li>“/trap”: The path to the trap (<a href="http://website.com/trap">website.com/trap</a>)</li><li>“category,category”: are the nubers assoicated with categories of attacks. Can be found <a href="https://www.abuseipdb.com/categories">here</a></li><li>“Description”: The description of the attack</li></ul></div><footer></footer></body></html>

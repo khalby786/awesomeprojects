@@ -8,12 +8,12 @@ layout: base.html
 
 <p>
   This is just a list of awesome projects made with
-  <a href="https://glitch.com">Glitch</a> using Glitch's API!
+  <a href="https://glitch.com">Glitch</a> that takes data from a collection using Glitch's API!
 </p>
 
 <div>
   {% for project in projects %}
-&bull;&nbsp;<a href="/project/{{ project.title }}">{{ project.title }}</a>:
+&bull;&nbsp;<a href="/project/{{ project.title }}">{{ project.title }}</a>:<br>
     {{ project.description }}
   <br><br>
 {% endfor %}
