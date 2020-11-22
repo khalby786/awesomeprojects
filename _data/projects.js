@@ -1,4 +1,4 @@
-var config = require("../config.js")
+var config = require("../config.js");
 var request = require("sync-request");
 var res = request(
   "GET",
@@ -31,4 +31,4 @@ while (i < res.items.length) {
   });
   i++;
 }
-console.log(obj);
+module.exports = obj;
