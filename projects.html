@@ -6,6 +6,18 @@ pagination:
 permalink: project/{{ project.title }}/
 layout: base.html
 ---
-<div class="is-medium">
-{{ project.readme | markdown }}
+
+<h1>
+  {{ project.title }}
+</h1>
+  <p>
+    {{ project.description }}
+  </p>
+
+<hr />
+<h3>
+  <a href="https://glitch.com/edit/#!/{{ project.title }}?path=README.md%3A1%3A0">README.md</a>
+</h3>
+<div>
+  {{ project.readme | markdown }}
 </div>
