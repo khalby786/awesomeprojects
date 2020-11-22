@@ -1,9 +1,21 @@
 ---
 layout: base.html
 ---
+
 <h1 class="title is-1">
   Awesome Projects
 </h1>
+<br />
 <p class="subtitle">
-  This is just a list of awesome projects made with <a href="https://glitch.com">Glicth</a> using Glitch's API!
+  This is just a list of awesome projects made with
+  <a href="https://glitch.com">Glicth</a> using Glitch's API!
 </p>
+<br>
+<div class="columns">
+  {% for project in projects %}
+  <div class="column">
+    <a href="/project/{ project.title }}">{{ project.title }}</a>
+    {{ project.description }}
+  </div>
+  {% endfor %}
+</div>
