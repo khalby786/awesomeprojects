@@ -5,7 +5,7 @@ var res = request(
   `https://api.glitch.com/v1/collections/by/fullUrl/projects?orderKey=createdAt&orderDirection=ASC&fullUrl=${config.collection}`,
   {
     headers: {
-      "user-agent": "example-user-agent"
+      "user-agent": "AwesomeProjects/1.0 (https://support.glitch.com/t/34560)"
     }
   }
 );
