@@ -7,6 +7,7 @@ var md = require("markdown-it")({
 const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addShortcode("datestring", function() {
     return new Date().toString();
   });
