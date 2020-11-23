@@ -10,6 +10,7 @@ eleventyExcludeFromCollections: true
 {% for project in projects %}
   <url>
     <loc>https://awesomeprojects.glitch.me/project/{{ project.title }}</loc>
+    <lastmod>{% datestring %}</lastmod>
   </url>
 {% endfor %}
 </urlset>

@@ -1,0 +1,26 @@
+---
+permalink: /rss.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>AwesomeProjects</title>
+	<subtitle>This is just a list of awesome projects made with Glitch that takes data from a collection using Glitch's API!</subtitle>
+	<link href="https://awesomeprojects.glitch.me/" rel="self"/>
+	<link href="https://awesomeprojects.glitch.me/"/>
+	<updated></updated>
+	<id>https://awesomeprojects.glitch.me/</id>
+	<author>
+		<name>aboutDavid</name>
+		<email>aboutdavid@pm.me</email>
+	</author>
+	{%- for project in projects | reverse %}
+	<entry>
+		<title>{{ project.title }}</title>
+		<link href="{{ project.url }}"/>
+		<updated>{% datestring %}</updated>
+		<id>{{ project.url }}</id>
+		<content type="html">{{ project.readme | markdown }}</content>
+	</entry>
+	{%- endfor %}
+</feed>
