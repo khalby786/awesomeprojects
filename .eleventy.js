@@ -7,7 +7,7 @@ var md = require("markdown-it")({
 const htmlmin = require("html-minifier");
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addShortcode("datestring", function() {
+  eleventyConfig.addShortcode("datestring", function() {
     return new Date().toString();
   });
   eleventyConfig.addFilter("markdown", function(value) {
@@ -15,6 +15,17 @@ module.exports = function(eleventyConfig) {
   });
   eleventyConfig.addFilter("markdownInline", function(value) {
     return md.renderInline(value);
+  });
+  eleventyConfig.addFilter("humanDate", function(value) {
+    var date = new Date();
+
+    return date
+      .toLocaleString("en-US", {
+        timeZone: "America/New_York",
+        timeStyle: "short",
+        dateStyle: "long"
+      })
+      .toString();
   });
   eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
     if (

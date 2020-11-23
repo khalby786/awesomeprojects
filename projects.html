@@ -11,7 +11,11 @@ layout: base.html
   {{ project.title }}
 </h1>
   <p>
-    {{ project.description }}
+    {{ project.description }}<br>
+    Last Updated on: {{ project.lastUpdated | humanDate }}<br>
+    {% for user in users %}
+    
+    {% endfor %}
   </p>
 <p>
   <a href="{{ project.url }}">View App</a> &bull; <a href="https://glitch.com/edit/#!/{{ project.title }}">View Source</a>
