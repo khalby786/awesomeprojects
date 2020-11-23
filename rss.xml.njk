@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
 	<entry>
 		<title>{{ project.title }}</title>
 		<link href="{{ project.url }}"/>
-		<updated>{% datestring %}</updated>
+		<updated>{{ project.lastUpdated }}</updated>
 		<id>{{ project.url }}</id>
 		<content type="html">{{ project.readme | markdown }}</content>
 	</entry>
