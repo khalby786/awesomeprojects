@@ -9,20 +9,21 @@ var res = request(
     }
   }
 );
-var project = request(
-  "GET",
-  `https://api.glitch.com/v1/collections/by/fullUrl/projects?orderKey=createdAt&orderDirection=ASC&fullUrl=${config.collection}`,
-  {
-    headers: {
-      "user-agent": "AwesomeProjects/1.0 (https://support.glitch.com/t/34560)"
-    }
-  }
-);
 res = JSON.parse(res.getBody());
-project = JSON.parse(project.getBody());
+
 var obj = [];
 var i = 0;
 while (i < res.items.length) {
+  var project = request(
+    "GET",
+    `http://api.glitch.com/projects/${res.items[i].domain}`,
+    {
+      headers: {
+        "user-agent": "AwesomeProjects/1.0 (https://support.glitch.com/t/34560)"
+      }
+    }
+  );
+  project = JSON.parse(project.getBody());
   obj.push({
     title: res.items[i].domain,
     description: res.items[i].description,
@@ -34,7 +35,8 @@ while (i < res.items.length) {
       `https://api.glitch.com/projects/${res.items[i].domain}/readme`,
       {
         headers: {
-          "user-agent": "AwesomeProjects/1.0 (https://support.glitch.com/t/34560)"
+          "user-agent":
+            "AwesomeProjects/1.0 (https://support.glitch.com/t/34560)"
         }
       }
     )
