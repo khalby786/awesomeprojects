@@ -18,7 +18,7 @@ module.exports = function(eleventyConfig) {
     return md.renderInline(value);
   });
   eleventyConfig.addFilter("humanDate", function(value) {
-    var date = new Date();
+    var date = new Date(value);
 
     return date
       .toLocaleString("en-US", {

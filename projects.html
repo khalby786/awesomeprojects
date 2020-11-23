@@ -20,6 +20,7 @@ layout: base.html
       src="{{ user.avatarUrl }}"
       alt="{{ user.name or user.login }}'s Profile picture"
       style="vertical-align:middle;width:50px;height:50px;border-radius:50%;"
+      onerror="this.style.display='none'"
     />
   </a>
 </abbr>
