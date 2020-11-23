@@ -16,7 +16,7 @@ var i = 0;
 while (i < res.items.length) {
   var project = request(
     "GET",
-    `http://api.glitch.com/projects/${res.items[i].domain}`,
+    `https://api.glitch.com/projects/${res.items[i].domain}`,
     {
       headers: {
         "user-agent": "AwesomeProjects/1.0 (https://support.glitch.com/t/34560)"
